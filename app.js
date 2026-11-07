@@ -36,7 +36,7 @@ function speak(text,opt={}){
 const stopSpeak=()=>{playToken++;if(TTS)try{speechSynthesis.cancel()}catch(e){}};
 const spkBtn=(t,cls="")=>TTS?`<button class="spk ${cls}" data-say="${esc(t)}" aria-label="استمع">🔊</button>`:"";
 function bindSpeak(root){root.querySelectorAll("[data-say]").forEach(b=>{b.onclick=e=>{e.stopPropagation();const t=b.dataset.say;b.classList.add("playing");speak(t,b.dataset.rate?{rate:+b.dataset.rate}:{}).then(()=>b.classList.remove("playing"))}})}
-function bindTr(root){root.querySelectorAll(".trbtn").forEach(b=>{b.onclick=()=>{const t=b.nextElementSibling;t.hidden=!t.hidden;b.textContent=t.hidden?"🌐 ترجمة":"🙈 إخفاء الترجمة"}})}
+function bindTr(root){root.querySelectorAll(".trbtn:not([data-meaning])").forEach(b=>{const lab=b.textContent;b.onclick=()=>{const t=b.nextElementSibling;t.hidden=!t.hidden;b.textContent=t.hidden?lab:"🙈 إخفاء الترجمة"}})}
 const trBlock=ar=>`<button class="trbtn">🌐 ترجمة</button><div class="tr" hidden>${esc(ar).replace(/\n/g,"<br>")}</div>`;
 
 /* ───── flags & icons ───── */
@@ -440,8 +440,9 @@ function runQuiz(qs,onDone,root){
      ${q.ar?`<div class="qar">${esc(q.ar)}</div>`:""}
      ${q.listen?`<div class="row c">${spkBtn(q.listen)}<button class="spk slow" data-say="${esc(q.listen)}" data-rate=".5">🐢</button></div>`:""}
      ${q.e?`<div class="qline"><div class="qe">${esc(q.e)}</div>${spkBtn(q.spk||q.e)}</div>`:""}
+     ${q.key&&q.key[0]==="h"&&TQ[q.e]?trBlock(TQ[q.e]).replace("ترجمة","ترجمة السؤال"):""}
      <div class="opts">${sh.map((o,j)=>`<button class="opt ${lat?"lat":""}" data-o="${j}"><span class="k">${LET[j]}</span><span>${esc(o)}</span></button>`).join("")}</div><div id="fbk"></div></div>`;
-    bindSpeak(root);if(q.listen)setTimeout(()=>speak(q.listen),250);
+    bindSpeak(root);bindTr(root);if(q.listen)setTimeout(()=>speak(q.listen),250);
     root.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
       const pick=sh[+b.dataset.o],ok=pick===right;
       root.querySelectorAll(".opt").forEach(o=>{o.disabled=true;if(sh[+o.dataset.o]===right)o.classList.add("right")});

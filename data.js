@@ -273,3 +273,39 @@ const UNITS = [
  chant:{title:"Party time! (original chant)",en:"We're going to sing, we're going to play,\nWe're going to have a party today!\nCake and cherries, games and fun,\nHooray, hooray, Year 5 is done!",ar:"سنغني وسنلعب،\nسنقيم حفلة اليوم!\nكعك وكرز وألعاب ومرح،\nهورا هورا، انتهى الخامس!"},
  project:"مراجعة: أسئلة هذه الوحدة تأتي من الوحدات 5 و6 و7.",qs:[]}
 ];
+
+/* ترجمة جمل الأسئلة (تظهر بزر «ترجمة السؤال») */
+const TQ={
+"She ___ from Japan.":"هي ___ من اليابان.","They ___ from Italy.":"هم ___ من إيطاليا.","I ___ Iraqi.":"أنا ___ عراقي.",
+"A person from France is ___.":"الشخص من فرنسا جنسيته ___.","A person from Japan is ___.":"الشخص من اليابان جنسيته ___.",
+"Where are pandas from?":"من أين الباندا؟","Are Murad and Ali from Turkey?  No, ___.":"هل مراد وعلي من تركيا؟ لا، ___.",
+"What is the capital of Iraq?":"ما عاصمة العراق؟","I want to learn English ___ I want to travel.":"أريد تعلّم الإنكليزية ___ أريد أن أسافر.",
+"The flag of Egypt is red, white and ___.":"علم مصر أحمر وأبيض و___.","The Tigris and the Euphrates are two famous ___ in Iraq.":"دجلة والفرات ___ مشهوران في العراق.",
+"What nationality are you?  I'm ___.":"ما جنسيتك؟ أنا ___.","Paris is the capital of France.":"باريس عاصمة فرنسا.","The Taj Mahal is in Egypt.":"تاج محل في مصر.",
+"Kangaroos are from Australia.":"الكنغر من أستراليا.","Pandas are from Turkey.":"الباندا من تركيا.",
+"He ___ up at six o'clock.":"هو ___ عند الساعة السادسة.","She ___ clothes on Friday.":"هي ___ الملابس يوم الجمعة.","Does she ___ the house on Thursday?":"هل ___ البيت يوم الخميس؟",
+"Does he watch TV?  No, he ___.":"هل يشاهد التلفاز؟ لا، هو ___.","7:30 → seven ___":"7:30 ← السابعة و___","12:00 → twelve ___":"12:00 ← الثانية عشرة ___",
+"A shark is ___.":"القرش ___.","A cat that likes to play is ___.":"القطة التي تحب اللعب ___.","The opposite of lazy is ___.":"عكس كسول هو ___.",
+"A butterfly has ___ wings.":"للفراشة ___ أجنحة.","A big home for ants is called a ___.":"البيت الكبير للنمل يسمى ___.","First, he gets up. ___, he has breakfast.":"أولاً يستيقظ. ___ يتناول الفطور.",
+"Flies are dangerous because they carry disease.":"الذباب خطير لأنه يحمل الأمراض.","A dove is a symbol of war.":"الحمامة رمز الحرب.","Owl likes to sleep.":"البومة تحب النوم.",
+"I ___ football every Friday.":"أنا ___ كرة القدم كل جمعة.","She ___ swimming on Tuesday.":"هي ___ للسباحة يوم الثلاثاء.","We ___ karate at school.":"نحن ___ الكاراتيه في المدرسة.",
+"He ___ gymnastics twice a week.":"هو ___ الجمباز مرتين في الأسبوع.","I ___ clean my teeth.  (always)":"أنا ___ أنظف أسناني. (دائماً)","She doesn't like chocolate. She ___ eats chocolate.":"هي لا تحب الشوكولاتة. هي ___ تأكلها.",
+"How often do you help at home?":"كم مرة تساعد في البيت؟","Where do you go swimming?":"أين تذهب للسباحة؟","twice a week = ___":"twice a week = ___ (بالعربية: مرتين في الأسبوع)",
+"___ pupils help at home. (معظم التلاميذ)":"___ التلاميذ يساعدون في البيت.","Swimming and running keep you ___.":"السباحة والجري تجعلك ___.",
+"We say 'play karate'.":"نقول 'play karate'.","We say 'go cycling'.":"نقول 'go cycling'.","'Never' means every day.":"كلمة 'never' تعني كل يوم.",
+"Are there any ___?":"هل توجد ___؟","Is there any ___?":"هل يوجد ___؟","Are there any cherries?  Yes, there ___ lots.":"هل توجد كرز؟ نعم، ___ الكثير.",
+"Is there any bread?  No, there ___.":"هل يوجد خبز؟ لا، ___.","two ___ of water":"اثنتان من ___ الماء","Would you like some salad?":"هل تريد بعض السلطة؟",
+"Would you like some tea?":"هل تريد بعض الشاي؟","There isn't ___ ice cream.":"لا يوجد ___ آيس كريم.","I'd like four ___.":"أرغب في أربع ___.",
+"Can I have two ___ of rice?":"هل يمكن أن آخذ اثنين من ___ الرز؟","We can count bread.":"نستطيع عدّ الخبز.","Cherries are countable.":"الكرز معدود.",
+"Dad caught a fish at the lake.":"اصطاد أبي سمكة في البحيرة.","I ___ at school yesterday.":"أنا ___ في المدرسة أمس.","They ___ at the park at 3 o'clock.":"هم ___ في الحديقة عند الثالثة.",
+"Where ___ you at nine o'clock?":"أين ___ أنت عند التاسعة؟","Who was at the bank?  Mum ___.":"من كان في المصرف؟ أمي ___.","A bakery sells ___.":"المخبز يبيع ___.",
+"A pharmacy sells ___.":"الصيدلية تبيع ___.","Where can you get meat from?":"من أين تحصل على اللحم؟","Where can you get money from?":"من أين تحصل على المال؟",
+"The shoe shop is ___ the clothes shop and the bakery.":"محل الأحذية ___ محل الملابس والمخبز.","The shop is ___ the bank. (على الجهة المقابلة)":"المحل ___ المصرف. (على الجهة المقابلة)",
+"Would you like to go on the big wheel?  No, ___. It's too fast.":"هل تود ركوب الدولاب الدوّار؟ لا، ___. إنه سريع جداً.","The pharmacy is ___ Green Street.":"الصيدلية ___ شارع غرين.",
+"A merry-go-round is a ride in Fun City.":"دوّارة الخيل لعبة في مدينة الألعاب.","We buy bread from the pharmacy.":"نشتري الخبز من الصيدلية.","Sami forgot the shopping list.":"نسي سامي قائمة التسوق.",
+"Last summer, we ___ to Basra.":"في الصيف الماضي ___ إلى البصرة.","I ___ you some flowers.":"أنا ___ لك بعض الزهور.","We didn't ___ any photos.":"نحن لم ___ أي صور.",
+"What was the weather like?  It ___ sunny.":"كيف كان الطقس؟ كان ___ مشمساً.","I'm ___ to give my dad a key ring.":"أنا ___ أن أعطي أبي حلقة مفاتيح.","It's my bag. It's ___.":"هذه حقيبتي. إنها ___.",
+"It's her pen. It's ___.":"هذا قلمها. إنه ___.","The red bag is ___. (أنت)":"الحقيبة الحمراء ___. (لك)","It's rainy. Take an ___.":"الجو ممطر. خذ ___.",
+"We go to Egypt ___ plane.":"نذهب إلى مصر ___ الطائرة.","The opposite of cold is ___.":"عكس بارد هو ___.","Autumn is a season.":"الخريف فصل.",
+"A ferry boat flies in the sky.":"العبّارة تطير في السماء.","'Went' is the past of 'go'.":"'Went' ماضي 'go'."
+};
