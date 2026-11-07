@@ -1,0 +1,18 @@
+{
+  "name": "English for Iraq - الخامس الابتدائي",
+  "short_name": "English 5",
+  "description": "تعلّم الإنكليزية للصف الخامس الابتدائي: منهج وبطاقات وكلمات صعبة واستماع ونطق واختبارات وألعاب. من لوجيكال كود.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FBF5EA",
+  "theme_color": "#7B1E2B",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

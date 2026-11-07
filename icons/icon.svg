@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="110" fill="#7B1E2B"/>
+<path d="M96 120h260a44 44 0 0 1 44 44v118a44 44 0 0 1-44 44H230l-84 70v-70H96a44 44 0 0 1-44-44V164a44 44 0 0 1 44-44z" fill="#FFF6E5"/>
+<text x="226" y="272" font-size="150" font-weight="800" text-anchor="middle" fill="#7B1E2B" font-family="DejaVu Sans,Arial,sans-serif">Aa</text>
+<circle cx="392" cy="384" r="84" fill="#F2B544"/><text x="392" y="424" font-size="110" font-weight="800" text-anchor="middle" fill="#7B1E2B" font-family="DejaVu Sans,Arial,sans-serif">5</text></svg>
