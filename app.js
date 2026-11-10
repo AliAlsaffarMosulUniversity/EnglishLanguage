@@ -1,8 +1,7 @@
-/* English for Iraq – 5th Primary  |  Logical Code */
+/* English for Iraq – 5th Primary  |  Ali Al-Saffar */
 "use strict";
 const SITE="https://alialsaffarmosuluniversity.github.io/EnglishLanguage/";
-const FB_URL="https://www.facebook.com/logicalcode4all";
-const WA_NUM="9647764994170", WA_SHOW="0776 499 4170";
+const WA_NUM="9647740856155", WA_SHOW="0774 085 6155";
 const $=s=>document.querySelector(s);
 const app=$("#app"),bar=$("#bar");
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
@@ -121,7 +120,7 @@ function installHelp(){
 }
 function install(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt.userChoice.finally(()=>{deferredPrompt=null});return}installHelp()}
 function invite(){
-  const text="🎉 تطبيق English for Iraq للصف الخامس الابتدائي: منهج ممتع، بطاقات، كلمات صعبة، استماع ونطق، اختبارات وألعاب. مجاني من لوجيكال كود:";
+  const text="🎉 تطبيق English for Iraq للصف الخامس الابتدائي: منهج ممتع، بطاقات، كلمات صعبة، استماع ونطق، اختبارات وألعاب. مجاني، من علي الصفار .. دعم لبراعم العراق:";
   if(navigator.share){navigator.share({title:"English for Iraq – الخامس الابتدائي",text,url:SITE}).catch(()=>{});return}
   const enc=encodeURIComponent;
   const box=sheet(`<h3>💌 ادعُ أصدقاءك</h3><p style="margin:0">شارك التطبيق مع زملائك ليتعلموا الإنكليزية معك.</p>
@@ -133,13 +132,12 @@ function invite(){
    <div class="siteurl">${SITE}</div><button class="btn ghost" data-close>إغلاق</button>`,"دعوة الأصدقاء");
   box.querySelector("#cpy").onclick=e=>copyText(SITE,e.currentTarget);
 }
-const LCLOGO=`<svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#0B1F3A"/><path d="M24 20l-10 12 10 12M40 20l10 12-10 12" fill="none" stroke="#22D3EE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 18l12 5-12 5-12-5z" fill="#E5E7EB"/><path d="M26 27v5c0 2 3 3 6 3s6-1 6-3v-5" fill="none" stroke="#E5E7EB" stroke-width="2.2"/></svg>`;
+const LCLOGO=`<svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#7B1E2B"/><text x="32" y="43" font-size="34" text-anchor="middle">🌱</text></svg>`;
 function about(){
-  sheet(`<div class="lc">${LCLOGO}<div><h3>لوجيكال كود | Logical Code</h3><div style="color:var(--muted);font-size:.95rem">المنطق هو البداية لكل مشروع ناجح</div></div></div>
-   <p style="margin:0">نحن شركة <b>لوجيكال كود</b> المتخصصة في تصميم البرمجيات والمواقع والتطبيقات التعليمية في الموصل، العراق. صمّمنا هذا التطبيق ليتعلم تلاميذ الصف الخامس الابتدائي الإنكليزية بطريقة ممتعة.</p>
+  sheet(`<div class="lc">${LCLOGO}<div><h3>علي الصفار</h3><div style="color:var(--muted);font-size:.95rem">دعم لبراعم العراق</div></div></div>
+   <p style="margin:0">صمّم هذا التطبيق <b>علي الصفار</b> من الموصل، العراق، دعماً لبراعم العراق، ليتعلم تلاميذ الصف الخامس الابتدائي الإنكليزية بطريقة ممتعة.</p>
    <p style="margin:0"><b>نصنع لك تطبيقاً مشابهاً</b> لمدرستك أو مادتك أو مشروعك: تطبيقات تعليمية، أنظمة مدارس، مواقع، وبحوث أكاديمية.</p>
    <div class="contact">
-    <a class="cbtn fb" href="${FB_URL}" target="_blank" rel="noopener">👍 صفحتنا على فيسبوك<small>facebook.com/logicalcode4all</small></a>
     <a class="cbtn wa" href="https://wa.me/${WA_NUM}" target="_blank" rel="noopener">💬 تواصل عبر واتساب<small>${WA_SHOW}</small></a></div>
    <button class="btn ghost" data-close>إغلاق</button>`,"من نحن");
 }
@@ -183,7 +181,7 @@ function home(){
   h+=`</section><button class="challenge" id="chal"><span class="em">🏆</span><span><h3>تحدي البطل</h3><p>اختبار من كل الكتاب، وأنت تحدد عدد الأسئلة</p></span><span class="go">ابدأ</span></button>
   <div class="actions"><button class="act" id="aInv"><span>💌</span>دعوة الأصدقاء</button><button class="act needinstall" id="aIns"><span>📲</span>تنزيل التطبيق</button><button class="act" id="aAbout"><span>ℹ️</span>من نحن</button></div>
   <div class="visits" id="visits" hidden></div>
-  <p class="foot">مبني على منهج English for Iraq للصف الخامس الابتدائي<br>تصميم وتطوير: لوجيكال كود</p>`;
+  <p class="foot">مبني على منهج English for Iraq للصف الخامس الابتدائي<br>تصميم وتطوير: علي الصفار .. دعم لبراعم العراق</p>`;
   app.innerHTML=h;
   app.querySelectorAll(".u").forEach(b=>b.onclick=()=>unit(+b.dataset.id,"learn"));
   $("#chal").onclick=challenge;$("#aInv").onclick=invite;$("#aAbout").onclick=about;
